@@ -1,0 +1,16 @@
+#page-wrap { 
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+}
+/* * { 
+    margin: 0; 
+    padding: 0; 
+    color: #4c566a;
+} */
+
+#accordion-resizer {
+    padding: 10px;
+    width: 50%;
+    margin:auto;
+  }
