@@ -1,4 +1,12 @@
-# lab 2
+# Lab 2
+
+This is the readme file for the first lab of Web Systems & Development class. 
+RCSID: liuj42
+
+Link to repo for this class: https://github.com/liuj-42/webdev
+
+discord tag: `e g g#0507` or `᲼᲼#7009` (the id is 190556758362685442) and both accounts have egg profile pictures
+
 > Every lab you turn in will have a README.md file. This file will contain a running work log of everything you did for this lab. I especially want to know where you got stuck along the way and what you did to get out of being stuck. One to two sentences isn’t going to cut it here: this is the only opportunity you are going to get to document your own progression so take it seriously. At the end of the semester, I should be able to read through all the README.md files and have a good idea of your growth--as should you!
 
 I had used the accordion widget before on my personal website in intro to ITWS, so I let my group members that I could creat the initial layout of the site with the constution split up by articles/ammendments and my other group members would then add the annotations and make the website look better.
