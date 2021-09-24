@@ -4,24 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Constitution</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="jquery-ui.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <!-- <script>
-    $( function() {
-        $(".accordion").accordion({
-            heightStyle: "content",
-            active: false,
-            collapsible: true
-        });
-    } );
-  </script> -->
   <script src="index.js"></script>
+  
 </head>
-<body>
+<body id="pictureBody">
+    
+<div id="image">
+    
 <div id = "page-wrap">
-    <h3>The Constitution With Annotations</h3>
+    <h3 id="title">The Constitution With Annotations</h3>
     <div class="accordion">
     <h3>The Premble</h3>
     <div>
@@ -31,6 +26,10 @@
     </div>
     <h3>Article I</h3>
     <div>
+        <div class="dialog" title="Article I Annotations" id='dialog1_content'>
+            <p>Article 1 of the constitution is the foundation for the legislative branch of our government and the congress. This branch has the job of creating new laws or legislation. The article makes the branch bicameral which means it has two groups (bodies) : the House of Representatives and the Senate. Article 1 contains important procedures in the legislative branch such as passing laws which must be passed by the House of Representatives, Senate, and finally the president. This is why it’s very important for people to vote for the people they want in government because they will be creating the laws that we have to follow every day.</p>
+        </div>
+        <button class="opener" id='dialog1' onClick="clicked(this.id)">Open Annotations</button>
         <h3>Section 1</h3>
         <p>
             All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.
@@ -118,6 +117,10 @@
     </div>
     <h3>Article II</h3>
     <div>
+        <div class="dialog" title="Article II Annotations" id='dialog2_content'>
+            <p>Article 2 sets the foundation of the executive branch of our government, the branch that the US president is a part of. Article 2 gives the president the power to serve as the head of the executive branch for 4 years which gives the president powers such as being the head of our military and being able to recommend laws. The article also goes through the process of how the president gets elected and how government officials can be impeached or removed from office for serious crimes. The president is one of the most important and prominent figures in our government. It is important to understand how he/she comes to power with the help of our votes and how he/she can also be removed if a serious offense is committed by them.</p>
+        </div>
+        <button class="opener" id='dialog2' onClick="clicked(this.id)">Open Annotations</button>
         <h3>Section 1</h3>
         <p>The executive Power shall be vested in a President of the United States of America. He shall hold his Office during the Term of four Years, and, together with the Vice President, chosen for the same Term, be elected, as follows</p>
         <p>Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress: but no Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be appointed an Elector.</p>
@@ -141,6 +144,10 @@
     </div>
     <h3>Article III</h3>
     <div>
+        <div class="dialog" title="Article III Annotations" id='dialog3_content'>
+            <p>Article 3 sets the foundation for the judicial branch of our government. Article 3 creates the Supreme court which is the most powerful court in the judicial branch. In the judicial branch all judges can keep their jobs for the rest of their lives as long as they are found guilty of crimes. This allows judges to be independent and make decisions they feel are right. The supreme court can create minor courts and can only interpret the laws but not create or change any. The judicial branch is very important as they determine how our laws are interpreted and how people can be punished for breaking the laws.</p>
+        </div>
+        <button class="opener" id='dialog3' onClick="clicked(this.id)">Open Annotations</button>
         <h3>Section 1</h3>
         <p>The judicial Power of the United States, shall be vested in one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish. The Judges, both of the supreme and inferior Courts, shall hold their Offices during good Behaviour, and shall, at stated Times, receive for their Services, a Compensation, which shall not be diminished during their Continuance in Office.</p>
 
@@ -155,6 +162,11 @@
     </div>
     <h3>Article IV</h3>
     <div>
+        <div class="dialog" title="Article IV Annotations" id='dialog4_content'>
+            <p>Article 4 describes the duties that the states must carry out and the duties the federal government has to the states. Article 4 also implies that the ultimate power rests with the citizens who are able to vote which is then carried out by the representatives we the citizens have elected. Article 4 states that all states must acknowledge and accept other states legislation and judicial procedures so that the states are unified and no one can escape to another state to avoid punishment in a different state. The article also gives the Congress the power to get rid of or add states/territories to the U.S. This article is important in unifying the states and keeping the U.S. together.
+            </p>
+        </div>
+        <button class="opener" id='dialog4' onClick="clicked(this.id)">Open Annotations</button>
         <h3>Section 1</h3>
         <p>Full Faith and Credit shall be given in each State to the public Acts, Records, and judicial Proceedings of every other State. And the Congress may by general Laws prescribe the Manner in which such Acts, Records and Proceedings shall be proved, and the Effect thereof.</p>
 
@@ -172,39 +184,53 @@
     </div>
     <h3>Article V</h3>
     <div>
+        <div class="dialog" title="Article V Annotations" id='dialog5_content'>
+            <p>Article 5 explains how the constitution itself can be changed from its current wording. When creating the constitution the founders knew that they had not finished the full document and that the constitution would need to change over time. In fact, just to have the constitution accepted the first 10 amendments had to be passed to please some states. Based on the article, there are two ways to amend the Constitution. The first is that an amendment can be proposed from the House or Senate and then must be approved by the state legislatures.
+                The second method is for a state or a group of states to call for a constitutional convention, and for both houses to approve this proposal of Congress. For an amendment to be passed it must go through the House and Senate by a two-thirds majority and then be ratified by three-quarters of state legislatures (38 states). The Article makes it complicated to pass amendments as there are so many legislators it must pass through. This is so that the amendments will be well thought and important if they will actually be passed. As a result the constitution has only been amended 27 times total.
+                </p>
+        </div>
+        <button class="opener" id='dialog5' onClick="clicked(this.id)">Open Annotations</button>
         <p>The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate.</p>
     </div>
     <h3>Article VI</h3>
     <div>
+        <div class="dialog" title="Article VI Annotations" id='dialog6_content'>
+            <p>Article six’s main purpose is to state that the constitution is supreme in establishing law and treaties. The Article is referred to as the supremacy clause because it states that the constitution is the “supreme law of the land.” No states are above the federal laws and constitution and cannot create laws that contradict either. The article also states that the US will pay off debts from before the constitution was created. Article 6 also guarantees religious freedom within the U.S. government. This article overall states that no one is above the constitution and the laws made by the federal gov’t. This is important because it means no one can go against these laws, for example no state or person can take away your right to practice your religion in the U.S.</p>
+        </div>
+        <button class="opener" id='dialog6' onClick="clicked(this.id)">Open Annotations</button>
         <p>All Debts contracted and Engagements entered into, before the Adoption of this Constitution, shall be as valid against the United States under this Constitution, as under the Confederation.</p>
         <p>This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding.</p>
         <p>The Senators and Representatives before mentioned, and the Members of the several State Legislatures, and all executive and judicial Officers, both of the United States and of the several States, shall be bound by Oath or Affirmation, to support this Constitution; but no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.</p>
     </div>
     <h3>Article VII</h3>
     <div>
+        <div class="dialog" title="Article VII Annotations" id='dialog7_content'>
+            <p> Article 7 was created in order to make the constitution the supreme law of the land and to explain how a state can ratify (give formal consent to the constitution) it. Article 7 made it so that only nine out of the original thirteen states were needed to ratify the Constitution to make it apply throughout the U.S. It took two and half years for all 13 to ratify the constitution. This was a very important step in the identity of the U.S. gov’t as the gov’t could have simply forced the constitution on the people but instead left it up to the people by giving them (the states) a voice in whether or not the constitution would become official.</p>
+        </div>
+        <button class="opener" id='dialog7' onClick="clicked(this.id)">Open Annotations</button>
         <p>The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.</p>
     </div>
     <h3>Ammendments</h3>
         <div class="accordion">
-            <h3>First Ammendment</h3>
+            <h3>First Ammendment <button class="opener" id='dialog8' onClick="clicked(this.id)">Open Annotations</button> </h3> 
                 <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
-            <h3>Second Ammendment</h3>
+            <h3>Second Ammendment <button class="opener" id='dialog9' onClick="clicked(this.id)">Open Annotations</button> </h3>
                 <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed.</p>
-            <h3>Third Ammendment</h3>
+            <h3>Third Ammendment <button class="opener" id='dialog10' onClick="clicked(this.id)">Open Annotations</button> </h3>
                 <p>No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.</p>
-            <h3>Fourth Ammendment</h3>
+            <h3>Fourth Ammendment <button class="opener" id='dialog11' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.</p>
-            <h3>Fifth Ammendment</h3>
+            <h3>Fifth Ammendment <button class="opener" id='dialog12' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.</p>
-            <h3>Sixth Ammendment</h3>
+            <h3>Sixth Ammendment <button class="opener" id='dialog13' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.</p>
-            <h3>Seventh Ammendment</h3>
+            <h3>Seventh Ammendment <button class="opener" id='dialog14' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>In Suits at common law, where the value in controversy shall exceed twenty dollars, the right of trial by jury shall be preserved, and no fact tried by a jury, shall be otherwise re-examined in any Court of the United States, than according to the rules of the common law.</p>
-            <h3>Eigth Ammendment</h3>
+            <h3>Eigth Ammendment <button class="opener" id='dialog15' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>Excessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.</p>
-            <h3>Ninth Ammendment</h3>
+            <h3>Ninth Ammendment <button class="opener" id='dialog16' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>The enumeration in the Constitution, of certain rights, shall not be construed to deny or disparage others retained by the people.</p>
-            <h3>Tenth Ammendment</h3>
+            <h3>Tenth Ammendment <button class="opener" id='dialog17' onClick="clicked(this.id)">Open Annotations</button></h3>
                 <p>The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.</p>
             <h3>Eleventh Ammendment</h3>
                 <p>The Judicial power of the United States shall not be construed to extend to any suit in law or equity, commenced or prosecuted against one of the United States by Citizens of another State, or by Citizens or Subjects of any Foreign State.</p>
@@ -349,10 +375,51 @@
             <h3>Twentyseventh Ammendment</h3>
             <p>No law, varying the compensation for the services of the Senators and Representatives, shall take effect, until an election of Representatives shall have intervened.</p>
         </div>
-    
-    </div>
 </div>
- 
+
+</div>
+
+<div class="dialog" title="First Amendment Annotations" id='dialog8_content'>
+    <p>The first amendment gives you Freedom of religion, speech, press, assembly, and petition. This stops Congress from being able to restrict people's religion. It guarantees you to be able to speak freely and petition the government (peacefully).</p>
+</div>
+
+<div class="dialog" title="Second Amendment Annotations" id='dialog9_content'>
+    <p>This amendment allows people the right to keep and bear arms for the preservation of life, liberty, and property. Although the amendment says a “well regulated militia,” the amendment has been interpreted as protecting the rights of individuals to have arms for self defense not for states to maintain militias. </p>
+</div>
+
+<div class="dialog" title="Third Amendment Annotations" id='dialog10_content'>
+    <p>Amendment 3 says that soldiers cannot stay in people's homes without their consent. During the revolutionary war the british used to force their way into people’s homes and demand food and housing. To prevent this amendment 3 was passed and it essentially guarantees peoples right to privacy nowadays.</p>
+</div>
+
+<div class="dialog" title="Fourth Amendment Annotations" id='dialog11_content'>
+    <p>Amendment 4 gives people the freedom from unreasonable searches and seizures. This means that police/government employees cannot search you or your home without a warrant or probable cause. In certain cases this amendment does not apply such as at the airport where you must be searched in order to board a flight. This law is important as it protects your privacy unless it is warranted based on solid evidence. For example police cannot search/enter your home without a warrant given by a judge or your permission.</p>
+</div>
+
+<div class="dialog" title="Fifth Amendment Annotations" id='dialog12_content'>
+    <p>The 5th amendment states that you have the right to due process of law, freedom from self-incrimination, double jeopardy and that private property cannot be taken away without compensation (pay). Double jeopardy means that you are protected from being tried for the same crime more than once. You can also “plead the fifth” which means you choose not to speak or testify against yourself in trial. Due process guarantees you a fair trial and you are also required to have your Miranda rights given to you by the police before they question you. This is also to prevent self-incrimination. </p>
+</div>
+
+<div class="dialog" title="Sixth Amendment Annotations" id='dialog13_content'>
+    <p>Amendment 6 gives accused persons the right to a speedy and fair trial, public trial, and a lawyer. Speedy trial  means that the gov’t cannot purposely delay a trial. Public trial means that the gov’t cannot hold secret trials that are unknown to the public. If an accused person cannot afford a lawyer in court the gov’t will provide a lawyer known as a public defender. It is also required for witnesses to testify in court so that they can be questioned, this is called a subpoena ( a writ ordering a person to attend court).</p>
+</div>
+
+<div class="dialog" title="Seventh Amendment Annotations" id='dialog14_content'>
+    <p>Amendment 7 is Trial by jury is certain civil cases (non criminal). Civil cases are cases not involving serious crimes, such as discrimination lawsuits or people suing each other. A trial by jury is when a select group of people hear the case and decide if the defendant is guilty. This was done to limit the power of the gov’t as judges may tend to side with the gov’t.</p>
+</div>
+
+<div class="dialog" title="Eigth Amendment Annotations" id='dialog15_content'>
+    <p>Amendment 8 prohibits excessive fines or bans and prohibits cruel and unusual punishment. With this amendment you are protected from excessive fines so that judges for example cannot set excessive bail money or fine you excessively for littering. The amendment also protects you from cruel punishments that are considered inhumane such as tortue, although the death penalty is still allowed in some states. </p>
+</div>
+
+<div class="dialog" title="Nineth Amendment Annotations" id='dialog16_content'>
+    <p>Amendment 9 states that the rights not specifically granted to the people in the Bill of Rights, still belong to the people. This amendment basically means that just because certain things are not listed on the bill of rights doesn’t mean the gov’t can take those rights away from you. This amendment is broad and can apply to many things for example the right to eat food and drink water or the right to get a job are not listed but are rights that we obviously have.</p>
+</div>
+
+<div class="dialog" title="Tenth Amendment Annotations" id='dialog17_content'>
+    <p>Amendment 10 states that any powers that aren't either given to the national government or denied to the state government belongs to the state. The federal government has all the powers given by the constitution but the other powers then trickle down the states and people. This amendment was created to balance out the powers between the state and federal governments. An example includes the federal government's power to control the armed forces while the states have the power of the police and fire departments. Some other state powers are holding elections, issuing drivers licenses, and public education (schools).</p>
+</div>
+
+</div>
 </body>
 </html>
 

@@ -1,6 +1,32 @@
+/* For fonts */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Kalam&display=swap');
+
+/* Background */
+#pictureBody{
+    background-color:antiquewhite;
+}
+
+p {
+    font-family: 'Kalam', cursive;}
+
+#title {
+    font-family: 'Italianno', cursive;
+    font-size: 5em;
+    margin-bottom: .2em;
+}
+
+#image{
+    background-image: url("Images/original.jpg");
+    background-size: cover;
+    width: 60vw;
+    height: 50vw;
+    margin: auto;
+    border-radius: 1em;
+}
+
 #page-wrap { 
     padding: 10px;
-    width: 50%;
+    width: 75%;
     margin:auto;
 }
 /* * { 
