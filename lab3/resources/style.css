@@ -3,19 +3,21 @@
 * {
     font-family: 'Ubuntu', sans-serif;
 }
+body {
+    background-image:url("https://science.rpi.edu/sites/default/files/banner_1.jpg");
+}
 
 header {
     background-color: #D6001C;
     position:sticky;
     top: 0;
-    /* width:100%; */
     width:99%;
-}
-.logo {
     padding:0.5%;
     display: inline-flex;
 }
-
+.social-media {
+    width:1em;
+}
 
 .header-content-parent {
     display: inline-flex;
@@ -34,7 +36,6 @@ header {
 .header-content a:hover {
     text-decoration:underline grey;
 }
-
 
 .dropbtn {
     color: white;
@@ -55,7 +56,6 @@ header {
 .dropdown-content {
     display:none;
     position:absolute;
-    /* background-color: rgb(212, 57, 57); */
     background-color: #B6B6B6;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -68,12 +68,154 @@ header {
     display:block;
 }
 .dropdown-content a:hover{
-    /* background-color: #f1f1f1 */
     text-decoration:underline red;
 }
 .dropdown:hover .dropdown-content{
     display:block;
     
 }
-    /* .dopdown:hover .dropbtn {
-    } */
+
+.right {
+    text-align:right;
+    float:right;
+    width:30vw;
+}
+
+
+footer {
+    background-color: lightgray;
+
+    border-top: red 2px solid;
+    bottom:0;
+    margin-right:-5px;
+    margin-left:-5px;
+    box-sizing: border-box;
+    height:100%;
+}
+footer div {
+    width:750px;
+    margin:auto;
+}
+footer div img {
+    width:5em;
+    float:left;
+}
+footer table {
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer div p {
+    display:inline-block;
+}
+.white-link {
+    color:darkgray;
+    text-decoration:none;
+}
+.white-link:hover{
+    color:white;
+}
+.grey-text *{
+    color:darkgray;
+}
+.portrait {
+    margin:1%;
+    width:10em;
+    float:left;
+}
+.prof-info {
+    float:left;
+}
+h2 {
+    display:inline-block;
+    margin-left:10%;
+    margin-bottom:1%;
+    font-size:large;
+}
+
+.info {
+    box-sizing:border-box;
+    padding:10px;
+    border: 2px black solid;
+    background-color:rgba(151, 144, 144, 0.699);
+    width:100%;
+}
+
+.page-wrap { 
+    box-sizing:border-box;
+    padding:20px;
+    width: 1250px; 
+    margin: 40px auto 60px; 
+    background-color:rgba(255, 255, 255, 0.90)
+}
+
+.title {
+    padding:1%;
+    background-color: rgba(119, 136, 153, 0.5);
+    width:fit-content;
+    text-align:center;
+}
+.nostyle {
+    list-style:none;
+}
+.nostyle li{
+    list-style:none;
+}
+h4 {
+    font-size:larger;
+    color:#9c1e22;
+}
+
+.headers:hover {
+    cursor:pointer;
+}
+.line {
+    border-bottom:grey 1px solid;
+}
+
+.tiny {
+    font-size:smaller;
+}
+
+h5 {
+    font-size: larger;
+}
+h6 {
+    font-size:x-large;
+}
+.news-content {
+    font-size: medium;
+}
+.news-content * {
+    word-wrap:break-word;
+}
+.news-content .header {
+    font-weight:bold;
+    display:inline-block;
+}
+
+.news-content img {
+    margin-right:1%;
+    float:left;
+}
+
+.align-left {
+    display:inline-block;
+}
+.align-right {
+    float:right;
+}
+
+.huge {
+    font-size:xx-large;
+}
+.grey-box-bg {
+    background-color:lightgrey;
+    padding:10px;
+    width:90%; 
+    margin-left:auto;
+    margin-right:auto;
+}
+.no-margin {
+    margin:0;
+}
