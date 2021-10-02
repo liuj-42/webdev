@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="stylesheet" href="../resources/style.css">
-    <script type="text/javascript" src="../resources/form.js"></script>
+  <script src="../resources/form.js"></script>
   
   <title>RPI ITWS page</title>
 </head>
@@ -51,14 +51,13 @@
                 <div class="value"><input type="text" size="60" name="phone" id="phone" placeholder="123-456-7890" value=""></div>
 
                 <label class="field" for="message">Message:</label>
-                <div class="value"><textarea rows="4" cols="40" name="message" id="message" placeholder="Enter your message here!" value=""></textarea></div>
+                <div class="value"><textarea rows="4" cols="40" name="message" id="message" placeholder="Enter your message here!"></textarea></div>
 
                 <input type="submit" value="save" id="save" name="save" onclick = "return validate(this)"/>
 
             </div>
         </fieldset>
-
-
+        </form>
     </div>
     <footer>  
         <div>
@@ -80,6 +79,7 @@
                 </tr>
                 <tr>
                     <td><a class="white-link" href="pages/contact.html">Contact Us</a></td>
+                    <td></td>
                     <td></td>
                 </tr>
             </table>
