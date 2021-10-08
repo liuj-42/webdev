@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../resources/signup.js"></script>
+
+    <title>GNH website signup page</title>
+</head>
+
+<body id="homepageBody">
+
+    <a href="../index.html"><img src="../resources/images/gnhLogo.png" class="gnhLogo" alt="GNH logo"></a>
+    <a href="https://science.rpi.edu/itws"><img src="../resources/images/itwsLogo.png" class="itwsLogo" alt="ITWS logo"></a>
+
+    <h1 class="homepageTitle">Weekly Tutoring Signup</h1>
+    <div class="page-wrap">
+
+
+
+    <p>GNH holds weekly tutoring session every Wednesday starting from 1PM.</p>
+    <p>Please enter your information in the form so we can help you as soon as possible.</p>
+    
+    <form action="#" method="get" id="signupForm" onsubmit="validate()">
+        <fieldset>
+            <div class="formData">
+                <label class="field" for="fName">First name:</label>
+                <div class="value"><input type="text" id="fName" placeholder="John"></div>
+
+                <label class="field" for="lName">Last name:</label>
+                <div class="value"><input type="text" id="lName" placeholder="Smith"></div>
+
+                <label class="rcsid" for="rcsid">RSCid:</label>
+                <div class="value"><input type="text" id="rcsid" placeholder="smithj12"></div>
+
+                
+                <label for="online" class="container">Online <input type="radio" name="online/inperson" id="online" onchange="check(this)"> 
+                    <span class="checkmark"></span>
+                </label>
+
+                
+                <label for="inperson" class="container">In Person<input type="radio" name="online/inperson" id="inperson" onchange="check(this)">
+                    <span class="checkmark"></span>
+                </label>
+
+                <div id="location">
+                    <!-- add stuff via javascript depending on if online or in person -->
+
+                </div>
+                <!-- change the type to submit later so the form gets cleared on a valid submit -->
+                <span class="buttonHolder-small">
+                <button class="hvr-grow" type="submit">Submit</button>
+                </span>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+<span id="weather" class="bottom-right">
+</span>
+
+    
+</body>
