@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Currency Converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="page-wrap">
+            <!-- this is a thing -->
+            <br/>
+            <label for="currency-select">Choose a currency to convert to EUR:</label>
+
+            <select id="currency-select">
+                <option value="">--Please choose an option--</option>
+
+            </select>
+            <br/>
+
+            
+            <input type="text" id="EURamt" name="EURamt" size="1" oninput="convert()">
+            EUR is equal to:
+            <span id="curAMT"></span>
+            <!-- <input type="text" id="curAMT" name="curAMT" readonly minlength="4" maxlength="8" size="2" value = ""> -->
+            <span id="cur"></span>
+
+        </div>
+        
+    </body>
+</html>
