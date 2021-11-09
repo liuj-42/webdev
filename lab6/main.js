@@ -41,12 +41,10 @@ function showOne(formObj) {
     inputs["ones"].classList.remove("hide");
 
     formObj["one"].classList.add("active");
-    formObj["one"].classList.remove("inactive");
 
     inputs["twos"].classList.add("hide");
     inputs["twos"].classList.remove("show");
 
-    formObj["two"].classList.add("inactive");
     formObj["two"].classList.remove("active");
 
     inputs["name2"].classList.add("hide");
@@ -65,13 +63,11 @@ function showTwo(formObj) {
     inputs["twos"].classList.remove("hide");
 
     formObj["two"].classList.add("active");
-    formObj["two"].classList.remove("inactive");
     
 
     inputs["ones"].classList.add("hide");
     inputs["ones"].classList.remove("show");
 
-    formObj["one"].classList.add("inactive");
     formObj["one"].classList.remove("active");
 
     inputs["name2"].classList.add("show");

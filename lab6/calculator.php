@@ -280,7 +280,7 @@ class tan extends Operation_1 implements functions{
 <html>
 <head>
 <title>PHP Calculator</title>
-<!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/> -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -288,25 +288,22 @@ class tan extends Operation_1 implements functions{
 
 
 
-
-<!-- TODO:  add custom buttons
-            add custom input fields
-            change site font
-            add animations (maybe) -->
   <div id="page-wrap">
     <h1>Calculator</h1>
 
 
     <form method="post" action="calculator.php" id="form" onsubmit="remember(this);">
-      <button type="button" id="one" onclick="showOne(this.parentElement);" class="active">One variable functions</button>
-      <button type="button" id="two" onclick="showTwo(this.parentElement);" class="inactive">Two variable functions</button>
-      <hr/>
+      <!-- <button class="button button--pandora"><span>Activate Card</span></button> -->
 
+      <button type="button" id="one" onclick="showOne(this.parentElement);" class="active button button--pandora"><span class="sel">One variable functions</span></button>
+      <button type="button" id="two" onclick="showTwo(this.parentElement);" class="inactive button button--pandora"><span class="sel">Two variable functions</span></button>
+      <hr/>
+      <label for="name1 name2" class="label">Input:</label>
       <input type="text" name="op1" id="name1" value="" class="show"/>
       <input type="text" name="op2" id="name2" value="" class="hide"/><br/>
       
       <p id="result" class="eqn" name="result">
-        <span id="label">Result: </span>
+        <span class="label">Result: </span>
         <?php 
           $op = $_SESSION['op'];
           $er[] = $_SESSION['err'];
@@ -328,7 +325,7 @@ class tan extends Operation_1 implements functions{
           } 
         ?>
       </p>
-      <br/>
+      <!-- <br/> -->
       
       <!-- Only one of these will be set with their respective value at a time -->
       <span id="ones" class="">
