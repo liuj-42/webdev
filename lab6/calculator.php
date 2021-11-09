@@ -293,7 +293,6 @@ class tan extends Operation_1 implements functions{
 
 
     <form method="post" action="calculator.php" id="form" onsubmit="remember(this);">
-      <!-- <button class="button button--pandora"><span>Activate Card</span></button> -->
 
       <button type="button" id="one" onclick="showOne(this.parentElement);" class="active button button--pandora"><span class="sel">One variable functions</span></button>
       <button type="button" id="two" onclick="showTwo(this.parentElement);" class="inactive button button--pandora"><span class="sel">Two variable functions</span></button>
@@ -325,7 +324,6 @@ class tan extends Operation_1 implements functions{
           } 
         ?>
       </p>
-      <!-- <br/> -->
       
       <!-- Only one of these will be set with their respective value at a time -->
       <span id="ones" class="">

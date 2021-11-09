@@ -4,12 +4,7 @@ $( document ).ready((function () {
     if (show_hide=='undefined') {
         show_hide="ones";
     }
-    // alert(localStorage.getItem("eqn"));
     var formObj = document.getElementById("form");
-    // childs = form.children;
-    // childs["ones"].classList.add("show");
-
-    // childs["twos"].classList.add("hide");
 
     check_show(formObj);
     
@@ -23,17 +18,7 @@ function check_show(formObj) {
     } else if (show_hide == "twos") {
         showTwo(formObj);
     }
-    if (localStorage.getItem("eqn") != 'undefined') {
-        formObj.children["result"].value = localStorage.getItem("eqn");
-    }
 }
-
-function remember(formObj) {
-    localStorage.setItem("eqn", formObj.children["result"].innerHTML);
-}
-
-
-
 
 function showOne(formObj) {
     inputs = formObj.children;
