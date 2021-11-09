@@ -1,5 +1,6 @@
 <?php 
-
+session_start();
+error_reporting(0);
 
 interface functions {
   public function operate();
@@ -12,7 +13,7 @@ abstract class Operation implements functions{
   public function __construct($o1, $o2) {
     // Make sure we're working with numbers...
     if (!is_numeric($o1) || !is_numeric($o2)) {
-      throw new Exception('Non-numeric operand.');
+      throw new Exception('<span class="error">Non-numeric operand / not enough inputs.</span>');
     }
     
     // Assign passed values to member variables
@@ -27,7 +28,7 @@ class Operation_1 {
   protected $operand;
   public function __construct($o1) {
     if (!is_numeric($o1)) {
-      throw new Exception('Non-numeric operand.');
+      throw new Exception('<span class="error">Non-numeric operand.</span>');
     }
 
     $this->operand = $o1;
@@ -43,6 +44,15 @@ class Addition extends Operation {
   }
   public function getEquation() {
     return $this->operand_1 . ' + ' . $this->operand_2 . ' = ' . $this->operate();
+  }
+}
+
+class Subtraction extends Operation {
+  public function operate() {
+    return $this->operand_1 - $this->operand_2;
+  }
+  public function getEquation() {
+    return $this->operand_1 . ' - ' . $this->operand_2 . ' = ' . $this->operate();
   }
 }
 
@@ -187,17 +197,7 @@ class tan extends Operation_1 implements functions{
   }
   $err = Array();
 
-  function check($op1, $op2) {
-    if (is_numeric($op1) && is_numeric($op2)) {
-      throw new Exception('2 inputs provided when only 1 is needed');
-    } else {
-      if (is_numeric($op1)) {
-        return $op1;
-      } else {
-        return $op2;
-      }
-    }
-  }
+
 
 // Instantiate an object for each operation based on the values returned on the form
 // For example, check to make sure that $_POST is set and then check its value and 
@@ -214,6 +214,9 @@ class tan extends Operation_1 implements functions{
 
 
 // Put code for subtraction, multiplication, and division here
+    else if (isset($_POST['sub']) && $_POST['sub'] == 'Subtract') {
+      $op = new Subtraction($o1, $o2);
+    }
     else if (isset($_POST['mult']) && $_POST['mult'] == 'Multiply') {
       $op = new Multiplication($o1, $o2);
     }
@@ -224,11 +227,11 @@ class tan extends Operation_1 implements functions{
 
     else if (isset($_POST['sqrt']) && $_POST['sqrt'] == "Square Root") {
       
-      $op = new sqrt(check($o1, $o2));
+      $op = new sqrt($o1);
     }
 
     else if (isset($_POST['square']) && $_POST['square'] == "Square") {
-      $op = new square(check($o1, $o2));
+      $op = new square($o1);
     }
 
     else if (isset($_POST['x^y']) && $_POST['x^y'] == "x^y") {
@@ -236,39 +239,41 @@ class tan extends Operation_1 implements functions{
     }
 
     else if (isset($_POST['log10']) && $_POST['log10'] == "Log") {
-      $op = new log10(check($o1, $o2));
+      $op = new log10($o1);
     }
 
     else if (isset($_POST['ln']) && $_POST['ln'] == "Natural Log") {
-      $op = new ln(check($o1, $o2));
+      $op = new ln($o1);
     }
 
     else if (isset($_POST['10^x']) && $_POST['10^x'] == "10^x") {
-      $op = new tenx(check($o1, $o2));
+      $op = new tenx($o1);
     }
 
     else if (isset($_POST['e^x']) && $_POST['e^x'] == "e^x") {
-      $op = new ex(check($o1, $o2));
+      $op = new ex($o1);
     }
 
     else if (isset($_POST['sin']) && $_POST['sin'] == "Sin(x)") {
-      $op = new sin(check($o1, $o2));
+      $op = new sin($o1);
     }
 
     else if (isset($_POST['cos']) && $_POST['cos'] == "Cos(x)") {
-      $op = new cos(check($o1, $o2));
+      $op = new cos($o1);
     }
 
     else if (isset($_POST['tan']) && $_POST['tan'] == "Tan(x)") {
-      $op = new tan(check($o1, $o2));
+      $op = new tan($o1);
     }
 
-
+    $_SESSION["op"]=$op;
 
   }
   catch (Exception $e) {
     $err[] = $e->getMessage();
+    $_SESSION["err"]=$err;
   }
+
 ?>
 
 <!doctype html>
@@ -276,6 +281,7 @@ class tan extends Operation_1 implements functions{
 <head>
 <title>PHP Calculator</title>
 <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -283,25 +289,36 @@ class tan extends Operation_1 implements functions{
 
 
 
-
+<!-- TODO:  add custom buttons
+            add custom input fields
+            change site font
+            add animations (maybe) -->
   <div id="page-wrap">
     <h1>Calculator</h1>
 
 
-    <form method="post" action="calculator.php">
+    <form method="post" action="calculator.php" id="form" onsubmit="remember(this);">
       <button type="button" id="one" onclick="showOne(this.parentElement);" class="active">One variable functions</button>
       <button type="button" id="two" onclick="showTwo(this.parentElement);" class="inactive">Two variable functions</button>
       <hr/>
 
-      <input type="text" name="op1" id="name" value="" />
-      <input type="text" name="op2" id="name" value="" />
-      <p id="result">
+      <input type="text" name="op1" id="name1" value="" class="show"/>
+      <input type="text" name="op2" id="name2" value="" class="hide"/><br/>
+      
+      <p id="result" class="eqn" name="result">
+        <span id="label">Result: </span>
         <?php 
+          $op = $_SESSION['op'];
+          $er[] = $_SESSION['err'];
           if (isset($op)) {
             try {
               echo $op->getEquation();
+              // echo("does this work");
             }
             catch (Exception $e) { 
+              if (isset($er)){
+                echo ("test");
+              }
               $err[] = $e->getMessage();
             }
           }
@@ -314,21 +331,23 @@ class tan extends Operation_1 implements functions{
       <br/>
       
       <!-- Only one of these will be set with their respective value at a time -->
-      <span id="blank">
-        <input type="submit" name="add" value="Add" />        
-        <input type="submit" name="sub" value="Subtract" />  
-        <input type="submit" name="mult" value="Multiply" />  
-        <input type="submit" name="divi" value="Divide" /> 
-        <input type="submit" name="sqrt" value="Square Root" /> 
-        <input type="submit" name="square" value="Square" />
-        <input type="submit" name="x^y" value="x^y" />
-        <input type="submit" name="log10" value="Log" />
-        <input type="submit" name="ln" value="Natural Log" />
-        <input type="submit" name="10^x" value="10^x" />
-        <input type="submit" name="e^x" value="e^x" />
-        <input type="submit" name="sin" value="Sin(x)" />
-        <input type="submit" name="cos" value="Cos(x)" />
-        <input type="submit" name="tan" value="Tan(x)" />
+      <span id="ones" class="">
+        <input class="bu1" type="submit" name="sqrt" value="Square Root" /> 
+        <input class="bu1"  type="submit" name="square" value="Square" />
+        <input class="bu1"  type="submit" name="log10" value="Log" />
+        <input class="bu1"  type="submit" name="ln" value="Natural Log" />
+        <input class="bu1"  type="submit" name="10^x" value="10^x" />
+        <input class="bu1"  type="submit" name="e^x" value="e^x" />
+        <input class="bu1"  type="submit" name="sin" value="Sin(x)" />
+        <input class="bu1"  type="submit" name="cos" value="Cos(x)" />
+        <input class="bu1"  type="submit" name="tan" value="Tan(x)" />
+      </span>
+      <span id="twos" class="">
+        <input class="bu2"  type="submit" name="add" value="Add" />        
+        <input class="bu2"  type="submit" name="sub" value="Subtract" />  
+        <input class="bu2"  type="submit" name="mult" value="Multiply" />  
+        <input class="bu2"  type="submit" name="divi" value="Divide" /> 
+        <input class="bu2"  type="submit" name="x^y" value="x^y" />
       </span>
     </form>
   </div>

@@ -1,11 +1,20 @@
+* {
+    color: #eceff4;
+}
+body {
+    background-color: #2e3440;
+}
+
 #page-wrap {
 
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 10%;
     width:600px;
     border: 1px solid black;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 15px;
+    background-color: #434C5E;
     
 }
 
@@ -16,5 +25,40 @@
 
 
 .active {
-    border: 3px solid black;
+    border: 3px solid #8fbcbb;
+}
+
+.show {
+    /* border: 10px solid red; */
+    display:inline;
+}
+.show input{
+    border-radius: 5px;
+}
+
+
+.hide {
+    display:none;
+}
+
+[type="button"] {
+    border-radius:50px;
+    height:30px;
+    color: #3b4252;
+}
+
+.eqn {
+    color: #ECEFF4;
+}
+
+.error {
+    color: #BF6A6A;
+}
+
+input {
+    color: #434c5e;
+}
+
+#label {
+    color: #81a1c1;
 }
