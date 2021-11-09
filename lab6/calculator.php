@@ -20,8 +20,6 @@ abstract class Operation implements functions{
     $this->operand_1 = $o1;
     $this->operand_2 = $o2;
   }
-  // public abstract function operate();
-  // public abstract function getEquation(); 
 }
 
 class Operation_1 {
@@ -47,6 +45,7 @@ class Addition extends Operation {
   }
 }
 
+// Add subclasses for Subtraction, Multiplication and Division here
 class Subtraction extends Operation {
   public function operate() {
     return $this->operand_1 - $this->operand_2;
@@ -177,8 +176,6 @@ class tan extends Operation_1 implements functions{
 }
 
 
-// Add subclasses for Subtraction, Multiplication and Division here
-
 
 // Some debugs - uncomment these to see what is happening...
 // echo '$_POST print_r=>',print_r($_POST);
@@ -271,7 +268,6 @@ class tan extends Operation_1 implements functions{
   }
   catch (Exception $e) {
     $err[] = $e->getMessage();
-    $_SESSION["err"]=$err;
   }
 
 ?>
@@ -305,16 +301,12 @@ class tan extends Operation_1 implements functions{
         <span class="label">Result: </span>
         <?php 
           $op = $_SESSION['op'];
-          $er[] = $_SESSION['err'];
           if (isset($op)) {
             try {
               echo $op->getEquation();
               // echo("does this work");
             }
             catch (Exception $e) { 
-              if (isset($er)){
-                echo ("test");
-              }
               $err[] = $e->getMessage();
             }
           }
