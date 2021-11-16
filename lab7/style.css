@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*min-width:100px;*/
+    /*max-width:200px;*/
+    width:150px;
+}
+input[type=text]:focus {border-color:#333; }
+
+input[type=submit] {
+    padding:5px 15px; background:#ccc; border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top:5px;
+    min-width:125px;
+}
+
+* {
+    color: #eceff4;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: #2e3440;
+}
+h1 {
+    font-family: 'Lora', serif;
+}
+#page-wrap {
+    margin: 2.5% auto auto;
+    width:1850px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #434C5E;
+}
+
+
+.warning {
+    color: #BF6A6A;
+}
+
+input {
+    color: #434c5e;
+}
+
+.label {
+    color: #81a1c1;
+}
+
+#result {
+    align-content:center;
+    text-align:center;
+    margin: auto auto;
+    width:900px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #434C5E;
+}
+#result *{
+    margin-left: auto;
+    margin-right: auto;
+}
