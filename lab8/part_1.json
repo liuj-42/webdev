@@ -1,0 +1,178 @@
+{
+  "Websys_course" : {
+    "Lectures": {
+      "Lecture 1": {
+        "Title": "Introduction",
+        "Desc": "Introduction to this course - going over expectations and schedule.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1qSMVJNQK3CY7Kt2kdeSwhY_toGOaxexVRPZmvZqmg7Q/edit?usp=sharing"
+        ]
+      },
+      "Lecture 2": {
+        "Title": "The Basics",
+        "Desc": "Introducing Unix/Apache/MySQL/PHP stack, getting everything installed on everyone's systems.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1gvCq-nWWM4ggARP6liG94KJZeRBpaNoRm9CkmxbzWT0/edit?usp=sharing"
+        ]
+      },
+      "Lecture 3": {
+        "Title": "Group Pages, Git, Apache",
+        "Desc": "Presentation of initial group pages, introduction to git and apache, HTTP architecture/Markup languages.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1ha7ZyL1FMxKoo43iFNoMByP00z7l9nTH7UMWcmH-4Tg/edit?usp=sharing",
+          "https://docs.google.com/presentation/d/1yqESGRC_v59VDIAUw1u3IsKPFFrqjrxQdD04I6cw6W0/edit?usp=sharing"
+        ]
+      },
+      "Lecture 4": {
+        "Title": "HTML5",
+        "Desc": "Continuing on HTTP architecture/Markup languages.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1Mib4YI837526U_VMoOE6M9tBFY2DxWO6581VZuYzrEo/edit?usp=sharing"
+        ]
+      },
+      "Lecture 5": {
+        "Title": "CSS",
+        "Desc": "Markup languages continued: wrapping up, HTML, looking at an introduction to CSS.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1usbhG9skLKmKpiMtA7udt36f2mzbscXT/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+          "https://docs.google.com/presentation/d/1Q5Ppt1l1BWllExUzAcfU7c03kAFmlT02-KKSouGZw7I/edit?usp=sharing"
+        ]
+      },
+      "Lecture 6": {
+        "Title": "Advanced CSS",
+        "Desc": "Looking at more advanced CSS and some aspects of it.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1Vp_-_fqCBtwhlgT3HhqMbXx-7Piv7OPiQvblxyznPZE/edit?usp=sharing"
+        ]
+      },
+      "Lecture 7": {
+        "Title": "JavaScript",
+        "Desc": "Introduction to JavaScript/jQuery.",
+        "Link": [
+          "https://docs.google.com/presentation/d/108yq32gLsn9Dn6_pjdpku9YagWjpaDuVY86BHfCB1KM/edit?usp=sharing"
+        ]
+      },
+      "Lecture 8": {
+        "Title": "AJAX & JSON",
+        "Desc": "Wrapping up introduction to JavaScript, introducing AJAX and JSON file format.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1CuKTZPsaJQs1DRgKbKHlObP_rTXv0HtAhm_wLFpEYfM/edit?usp=sharing"
+        ]
+      },
+      "Lecture 9": {
+        "Title": "jQuery",
+        "Desc": "AJAX with jQuery, and jQuery in general.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1TOpBmwdZF1cUNfzcZ8t2DT237vvm5yFnqqi9mUzNBYw/edit?usp=sharing"
+        ]
+      },
+      "Lecture 10": {
+        "Title": "None",
+        "Desc": "Presentations for GNH lab",
+        "Link": [
+          "#"
+        ]
+      },
+      "Lecture 11": {
+        "Title": "Quiz 1 Review & Frontend optimization/UX",
+        "Desc": "Reviewing for quiz 1 and Frontend Development",
+        "Link": [
+          "https://docs.google.com/presentation/d/13kknZgEpW_QjE2O4ssyhtZUi8tsLU4YU-rsSnkmhFlk/edit?usp=sharing",
+          "https://docs.google.com/presentation/d/1xnWSdl3QlAJhhYZJB-L9qulDC2VGb67Ye5jGF5A0NTk/edit?usp=sharing"
+        ]
+      },
+      "Lecture 12": {
+        "Title": "PHP & Lab 6",
+        "Desc": "Introduction to PHP.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1FQrs6bCzF6lyfCXYm--leU81zl9uMwLz/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true",
+          "https://docs.google.com/presentation/d/1l-idKFz6MG4l057y9kiz_aSMUcEIwJRnZvi88UBUB98/edit?usp=sharing"
+        ]
+      },
+      "Lecture 13": {
+        "Title": "PHP, the sequel",
+        "Desc": "Continuing to go over PHP and its applications.",
+        "Link": [
+          ""
+        ]
+      },
+      "Lecture 14": {
+        "Title": "MySQL",
+        "Desc": "Introducing databases.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1b9FUdOQxXLWUB_tNlShdqN695tt8nwMh/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+        ]
+      },
+      "Lecture 15": {
+        "Title": "PHP & MySQL",
+        "Desc": "Wrapping up databases by themselves and learning how to integrate PHP with the databases.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1hdchGQdRVq_vmLc4Ot1TbyDADWahZ15f/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+        ]
+      },
+      "Lecture 16": {
+        "Title": "PHP & MySQL, part 2",
+        "Desc": "Continuing to learn how to use PHP with databases and the uses of that.",
+        "Link": [
+          "https://docs.google.com/presentation/d/1IVV09GiwEho8KN4j3XFa9oVdIkz1t9LW/edit?usp=sharing&ouid=101431771635793895949&rtpof=true&sd=true"
+        ]
+      },
+      "Lecture 17": {
+        "Title": "Quiz 2 review, Login and Logout",
+        "Desc": "Reviewing for quiz 2, authentication with PHP/MySQL",
+        "Link": [
+          "https://docs.google.com/presentation/d/1i7WQnXzdwIccKC86zU3DmP_thmMgRpa7U2O-XjEEK88/edit?usp=sharing"
+        ]
+      },
+      "Lecture 18": {
+        "Title": "Authorization & Looking ahead",
+        "Desc": "Wrapping up authentication, starting and finishing authorization.",
+        "Link": [
+          "https://docs.google.com/presentation/d/191RL2L3t-JnjuOWvBfzYBJYbFP2TuAu4Fj6OOmB4A1E/edit?usp=sharing"
+        ]
+      }
+    },
+    "Labs": {
+      "Lab 1": {
+        "Title": "Portfolios",
+        "Desc": "Create a group and individual portfolio website with microformats",
+        "Link": ["https://docs.google.com/document/d/1gfBFgyWVZ4HrudNXn4h_TCicEtdywLBdQxfIEZl-U98/edit"]
+      },
+      "Lab 2": {
+        "Title": "Constitution Day",
+        "Desc": "Create an interactive website that displays the Constitution in a creative way",
+        "Link": ["https://docs.google.com/document/d/1oOEMKBc2Dq6C69Y_pkXRipkVYB5-b-UskvswnTOiNV0/edit"]
+      },
+      "Lab 3": {
+        "Title": "ITWS Website",
+        "Desc": "Create a new and improved version of the ITWS website",
+        "Link": ["https://docs.google.com/document/d/1TAqC_JIZ70o3bf87aCTPtFJxXB4k-VSQzesWzNDsMJI/edit"]
+      },
+      "Lab 4": {
+        "Title": "GNH Website",
+        "Desc": "Create a website for GNH to their given specifications",
+        "Link": ["https://docs.google.com/document/d/1VBy44Ts1Zly14JJPiFk1LeQnqEVVVHxbZQJzgRjrVfo/edit"]
+      },
+      "Lab 5": {
+        "Title": "Frontend Optimization",
+        "Desc": "Implement some optimizations for a game created in javascript",
+        "Link": ["https://docs.google.com/document/d/19fi99OeR6RFPDIMtio7xAyk7EkbvWlhiQzxi5LrS8hs/edit"]
+      },
+      "Lab 6": {
+        "Title": "A better calculator",
+        "Desc": "Create a PHP Calculator",
+        "Link": ["https://docs.google.com/document/d/1Aur3WmROp_lYT6UIIs1HjlZrc450VoORUXVzrXajZ8c/edit"]
+      },
+      "Lab 7": {
+        "Title": "MySQL",
+        "Desc": "Create a gradebook website that implements databases and PHP.",
+        "Link": ["https://docs.google.com/document/d/1ILpyD9LtNgXQ_g8-9bNV9DOgjZkL25Nup69x2wX0dHg/edit"]
+      },
+      "Lab 8": {
+        "Title": "Final lab",
+        "Desc": "Create a website for this course",
+        "Link": ["https://docs.google.com/document/d/1SIF9NwMwpI3HgYLhjoM0kAUpI5Pwp2-QefjjfE3FxBo/edit"]
+      }
+    }
+  }
+}
